@@ -87,7 +87,7 @@ def main():
           for peer_from in peers_from:
             if update.message.to_id.channel_id != peer_from.channel_id:
               continue
-            if "target" not in str(update.message.message).lower():
+            if "http" in str(update.message.message):
               continue
             peer_to = client.get_input_entity(PeerChannel(CHANNEL_TO.id))
             print("Message comming from channel id: "+str(update.message.to_id.channel_id))
