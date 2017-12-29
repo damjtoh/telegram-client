@@ -73,7 +73,8 @@ def main():
       client.get_input_entity("https://t.me/Cryptotguide"),
       client.get_input_entity("https://t.me/Mrcryptoindia"),
       client.get_input_entity("https://t.me/coindetector"),
-      client.get_input_entity("https://t.me/cryptobullet")
+    #   client.get_input_entity("https://t.me/cryptobullet"),
+      client.get_input_entity("https://t.me/Securetradingsignals")
     ]
     print(str(peers_from))
     def update_handler(update):
@@ -87,7 +88,7 @@ def main():
           for peer_from in peers_from:
             if update.message.to_id.channel_id != peer_from.channel_id:
               continue
-            if "http" in str(update.message.message):
+            if "http" in str(update.message.message) or "https" in str(update.message.message):
               continue
             peer_to = client.get_input_entity(PeerChannel(CHANNEL_TO.id))
             print("Message comming from channel id: "+str(update.message.to_id.channel_id))
