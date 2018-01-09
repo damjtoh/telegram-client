@@ -1,31 +1,3 @@
-# from telethon import TelegramClient
-
-# # These example values won't work. You must get your own api_id and
-# # api_hash from https://my.telegram.org, under API Development.
-# api_id = 105158
-# api_hash = '9eeea2ab5df259875d174dbddce9223d'
-# phone = '+541150184194'
-
-# client = TelegramClient('session_name', api_id, api_hash)
-# client.connect()
-
-# # # If you already have a previous 'session_name.session' file, skip this.
-# # client.sign_in(phone=phone)
-# # me = client.sign_in(code=36946)  # Put whatever code you received here.
-# me = client.get_me()
-# print(me.stringify())
-
-# client.send_message('IFTTT', 'Hello! Talking to you from Telethon')
-# # client.send_file('username', '/home/myself/Pictures/holidays.jpg')
-
-# channel_from = client.get_entity("https://t.me/Cryptotguide")
-# channel_to = client.get_entity("https://t.me/Cryptotguide")
-
-# total, messages, senders = client.get_message_history(channel_from)
-# for message in messages:
-#   print(str(message))
-
-
 #!/usr/bin/env python3
 # A simple script to print all updates received
 
